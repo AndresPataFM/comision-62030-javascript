@@ -1,0 +1,23 @@
+/* 
+🔶 Consigna: Crea una carpeta con el nombre “Mi proyecto”en el escritorio de tu computadora, y utiliza Visual Studio Code o tu editor de código elegido para abrirla. Dentro de la carpeta crea un archivo index.html y otro archivo llamado style.css.
+
+🔶 Utiliza la etiqueta <link> para enlazar ambos archivos y corrobora que funciona agregando un tag HTML <h1> que diga “Hola Mundo” y cambia su color de fondo desde el archivo CSS, utilizando la propiedad background-color. Utiliza algún color de fondo que contraste bien con las letras en negro.
+Luego, crea un repositorio en github con el nombre “Mi primer repo”, y sube 
+la carpeta con los archivos a este.
+*/
+
+body{
+    background-color: antiquewhite;
+}
+
+.rojo{
+    color: brown;
+}
+
+/* .fondoAzul{
+    background-color: rgb(4, 4, 146);
+} */
+
+#resaltar{
+    background-color: green;
+}
