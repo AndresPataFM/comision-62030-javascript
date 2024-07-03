@@ -57,6 +57,7 @@ console.log("Ejemplo de porque calcular con flotantes puede causar errores:", "1
 // Salida de usuario
 🔹 alert("string") => Abre una ventana que muestra el string
 🔹 console.log(x) => imprime en consola x, dicho x puede ser variable, función u objeto
+
 // Conversoras
 🔹 Number(x) => trata de convertir x en un número
 🔹 parseInt(x) => trata de convertir a x en un número entero

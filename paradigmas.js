@@ -27,8 +27,9 @@
 
 // 🔶 Polimorfismo 🔶
 
-//  🔶🔹 Frameworks 🔹🔶
+// 🔶🔹 Frameworks 🔹🔶
+
 // 🔶 Observable 🔶
 // 🔶 Contenedor/Presentador 🔶
 
-//  🔶🔹 Patrones de diseño 🔹🔶
+// 🔶🔹 Patrones de diseño 🔹🔶
