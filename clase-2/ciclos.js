@@ -5,12 +5,12 @@
 // 🔶 FOR 🔶
 /* 
 En el for:
-    -declaramos/seleccionamos una variable a declarar
+    -declaramos/seleccionamos una variable a evaluar
     -le ponemos una condición/argumento
     -decimos como se modifica la variable sobre la que iteramos
     -Declaramos un código a ejecutar por iteracion
 
-    for(variable; argumento; modificación){
+    for(variable; condición; modificación){
         ~código a ejecutar
     }
 */
@@ -37,6 +37,7 @@ El while es un bucle que repite el código siempre y cuando su argumento sea ver
 
 while(argumento){
     ~código a ejecutar
+    En algún momento aca, el argumento se tiene que volver falso
 }
 
 Suele ser más propenso al error ya que el código a ejecutar en si debe volver el argumento falso ya que no fuerza a uno a poner la condición

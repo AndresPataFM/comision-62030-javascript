@@ -33,17 +33,17 @@ false //falso
 // 🟠 Coerciones de tipo 🟠
 // A Js, en un descenso a la locura, se le ocurrio que ciertos valores eran lo suficientemente parecidos. Hay más pero por ahora nos interesan estos:
 /*
-    false ⇌ 0 ⇌ "false"
-    true ⇌ 1 ⇌ "true"
-    0 ⇌ "0"  ⇌ false
-    "" ⇌ 0  ⇌ false
+    0   ⇌ false ⇌ "false"
+    1   ⇌ true  ⇌ "true"
+    "0" ⇌   0   ⇌ false
+    0   ⇌  ""   ⇌ false
 */
 
 // 🟠 Operadores de comparación y lógicos 🟠
 // 🔶 Lógica 🔶
 /* 
 🔹 AND && (Y lógico)
-Compara la veracidad de 2 valores y si ambos son verdaderos, retorna verdadero
+Compara la veracidad de 2 valores y si ambos son verdaderos, retorna verdadero. Intenta retornar el valor falso.
 
 a && b
 
@@ -53,7 +53,7 @@ false && true ➡️ false
 false && false ➡️ false
 
 🔹 OR || (O lógico)
-Compara la veracidad de 2 valores y si uno de los dos es verdaderos, retorna verdadero
+Compara la veracidad de 2 valores y si uno de los dos es verdaderos, retorna verdadero. Intenta retornar el valor verdadero.
 
 a || b
 
@@ -62,8 +62,8 @@ true || false ➡️ true
 false || true ➡️ true
 false || false ➡️ false
 
-🔹 NOT !
-Invierte la veracidad del argumento
+🔹 NOT ! No lógico
+Invierte la veracidad del argumento. Siempre retorna un booleano.
 
 !a
 
@@ -154,6 +154,7 @@ a == b ➡️ a es similar a b
 
 1 == 1 ➡️ true
 1 == "1" ➡️ true
+1 == true ➡️ true
 1 == 1.0 ➡️ true
 1 == "hola" ➡️ false
 1 == "uno" ➡️ false

@@ -5,11 +5,11 @@
 /*
 La forma más sencilla de tomar decisiones
 
-if(argumento){
+if(condición){
     ~código a ejecutar
 }
 
-si el argumento es verdadero, se ejecuta el código interno, de lo contrario, no
+si el condición es verdadero, se ejecuta el código interno, de lo contrario, no
 */
 // 🔸 Ejemplos 🔸
 // Un banco muestra alerta a quienes tengan saldo negativo
@@ -22,25 +22,27 @@ si el argumento es verdadero, se ejecuta el código interno, de lo contrario, no
 
 // 🔶 IF ELSE STATEMENT 🔶 
 /*
-Permite tomar una acción cuando el argumento es falso
+Permite tomar una acción cuando el condición es falso
 
-if(argumento){
+if(condición){
     ~código 1
 } else {
     ~código 2
 }
 
-si el argumento es verdadero, se ejecuta el código 1, de lo contrario, se ejecuta el código 2
+si el condición es verdadero, se ejecuta el código 1, de lo contrario, se ejecuta el código 2
 */
 // 🔸 Ejemplos 🔸
 // El portero te deja entrar al boliche o no dependiendo de tu edad.
 
-// let edad = parseInt(prompt("Cuantos años tiene"))
-/* if(edad >= 18){
+/* 
+let edad = parseInt(prompt("Cuantos años tiene"))
+if(edad >= 18){
     alert("pase")
 } else {
     alert("usted es menor de edad, detengase")
-} */
+} 
+*/
 
 // if(edad > 17){
 //     alert("pase")
@@ -52,32 +54,32 @@ si el argumento es verdadero, se ejecuta el código 1, de lo contrario, se ejecu
 /*
 Esto nos permite aclopar un if detras de un else 
 
-if (argumento1){
+if (condición1){
     ~código 1
-} else if(argumento2){
+} else if(condición2){
     ~código 2
 }
 
-si el argumento 1 es verdadero, se ejecuta el código 1 y frena la ejecución del if. De lo contrario, si el argumento 2 es verdadero y el argumento 1 es falso, se ejecuta el código 2. Sino no se ejecuta nada.
+si el condición 1 es verdadero, se ejecuta el código 1 y frena la ejecución del if. De lo contrario, si el condición 2 es verdadero y el condición 1 es falso, se ejecuta el código 2. Sino no se ejecuta nada.
 
 A este le podemos acoplar un else al final
 
-if (argumento1){
+if (condición1){
     ~código 1
-} else if(argumento2){
+} else if(condición2){
     ~código 2
 } else {
     ~código 3
 }
 
-El else final solo va a ejecutarse si ambos argumentos son falsos
+El else final solo va a ejecutarse si ambos condicións son falsos
 
 EN ESTE CASO, NUNCA SE EJECUTA EL CÓDIGO 3
-if(argumento1){
+if(condición1){
     ~código 1
 } else { 
     ~código 2
-} else if(argumento2){
+} else if(condición2){
     ~código 3
 }
 
@@ -106,25 +108,25 @@ Un Switch es una manera avanzada de hacer un else if con un else al final en la 
     default: sería el caso equivalente al else final de un else if
 
 switch(elemento){
-    // if(elemento === argumento1){
+    // if(elemento === condición1){
     //     // código 1
     // }
-    case argumento1:
-        //estrictamente igual al argumento 1
+    case condición1:
+        //estrictamente igual al condición 1
         // código 1
         break ➡️ opcional
-    case argumento2:
+    case condición2:
         // código 2
         break ➡️ opcional
     ...
-    case argumentoFinal:
+    case condiciónFinal:
         // código Final
         break ➡️ opcional
     default:
         // equivalente a un else
         // código que se ejecuta si el resto es falso o si el caso anterior no tiene break
 }
-En el caso que un argumento sea verdadero, se ejecuta el código de este hasta frenarse con un break, en el caso en el que ningún argumento sea falso, 
+En el caso que un condición sea verdadero, se ejecuta el código de este hasta frenarse con un break, en el caso en el que ningún condición sea falso, 
 
 */
 // 🔸 Ejemplos 🔸
