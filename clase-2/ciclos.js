@@ -66,7 +66,7 @@ do{
     ~código a ejecutar
 }while(argumento)
 
-Se suele utilizar cuando se quiere ejecutar el código al menos 1 vez aunque este sea falso
+Se suele utilizar cuando se quiere ejecutar el código al menos 1 vez aunque este sea falso. esto es común cuando uno quiere que el usuario ingrese un dato y uno lo mantiene en el ciclo al menos que sea validado.
 
 */
 // 🔸 Ejemplos 🔸
@@ -87,6 +87,8 @@ Se suele utilizar cuando se quiere ejecutar el código al menos 1 vez aunque est
 
 
 // Log in con X cantidad de intentos
+
+
 
 // 🟠 continue 🟠
 // es una palabra reservada de uso exclusivo en ciclos que hace que se salte a la proxima iteración
