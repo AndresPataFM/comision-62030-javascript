@@ -1,7 +1,9 @@
-// Scope
+// Scope (Alcance)
 
 // Bloque de código
 // código declarado entre llaves {}
+
+// El scope de las variable esta determinado por su tipo y donde fueron declarados.
 
 // Cada bloque de código genera su propio scope
 
@@ -21,6 +23,7 @@ let global = "hola soy global"
         const enscope4 = 123132
     }
     { //local 2b
+        // console.log(enscope4)
         var porque = "no me toquen"
     }
 }

@@ -83,6 +83,7 @@ if(condición1){
     ~código 3
 }
 
+
 */
 // 🔸 Ejemplos 🔸
 // Le queres ofrecer algo para tomar a un amigo

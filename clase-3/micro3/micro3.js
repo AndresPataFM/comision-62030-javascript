@@ -14,7 +14,19 @@ ________ sumar() {
 ________ (sumar());
 */
 
+/* function sumar() {
+  let numero1 = 5;
+  let resultado = numero1 + 5;
 
+  return resultado;
+}
+console.log(sumar());
 
+const resultadoSumar = sumar()
+console.log(resultadoSumar) */
 
-
+const sumar = (numero1, numero2) => numero1 + numero2
+// flecha indica funcion
+// que no halla llaves después de la flecha indica return implicito
+console.log(sumar(2, 14))
+console.log(sumar(7, 124))

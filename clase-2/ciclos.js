@@ -88,6 +88,13 @@ Se suele utilizar cuando se quiere ejecutar el código al menos 1 vez aunque est
 
 // Log in con X cantidad de intentos
 
+/* 
+let texto = ""
+do{
+    texto = prompt("Ingrese sus datos. No puede estar vacío")
+}while(texto === "" || texto === null)
+
+*/
 
 
 // 🟠 continue 🟠
