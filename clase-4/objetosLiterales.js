@@ -1,5 +1,9 @@
 // 🟠 Objetos 🟠
-// Tipo de dato capaz de almacenar varias propiedades y/o métodos de manera clave/valor. cada propiedad y/o método de este se declara con el uso de ": y "," dentro de llames {}. No necesita de palabra reservada para declararlo.
+// Tipo de dato capaz de almacenar varias propiedades y/o métodos de manera clave/valor. Cada propiedad y/o método de este se declara con el uso de ": y "," dentro de llames {}. No necesita de palabra reservada para declararlo.
+
+// En cavernicola
+// propiedad => variable
+// método => función
 
 const objeto1 = {
     // clave: valor,

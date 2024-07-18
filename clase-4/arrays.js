@@ -102,6 +102,7 @@ console.log("unshift", testing1)
 // Agrega un elemento al final del array
 
 testing2.push("🧡")
+
 console.log(testing0)
 console.log("push", testing2)
 
@@ -114,15 +115,15 @@ console.log("push", testing2)
 // 🔹 💥Shift❌ 🔹
 // Quita un elemento al principio del array. Retorna el elemento removido.
 
-console.log(testing3.shift())
 console.log(testing0)
+console.log(testing3.shift())
 console.log("shift", testing3)
 
 // 🔹 💥Pop❌ 🔹
 // Agrega un elemento al principio del array. Retorna el elemento removido.
 
-console.log(testing4.pop())
 console.log(testing0)
+console.log(testing4.pop())
 console.log("pop", testing4)
 
 // 🔹 Delete y porque no utilizarlo 🔹 
@@ -141,7 +142,7 @@ console.log('testing5.join("")', testing5.join(""))
 console.log(testing0)
 
 // 🔸 💖Indexof✅ 🔸
-// Busca el indice del PRIMER elemento que sea estrictamente igual (===) al parámetro y retorna el nro del indice de ser enontrado, sino retorna -1. Utliza -1 para ser consistente con el tipo de dato del return.
+// Busca el indice del PRIMER elemento que sea estrictamente igual (===) al parámetro y retorna el nro del indice de ser enontrado, sino retorna -1. Utliza -1 para ser consistente con el tipo de dato del return. No va a funcionar con elementos que son objetos.
 
 console.log(testing6)
 testing6.indexOf("💙")
@@ -161,7 +162,7 @@ console.log('testing7.includes("💙")', testing7.includes("💙"))
 console.log('testing7.includes("🧡")', testing7.includes("🧡"))
 
 // 🔸 💥Sort⭕ 🔸
-// Ordena el array en orden ascendiente según el orden de los carácteres/números en UTF-16 ( https://www.fileformat.info/info/charset/UTF-16/list.htm ). Revisa los carácteres en orden sucesiva por lo que un 12, quedaría antes de un 3 al ser sorteado. No usa parámetro.
+// Ordena el array en orden ascendiente según el orden de los carácteres/números en UTF-16 ( https://www.fileformat.info/info/charset/UTF-16/list.htm ). Revisa los carácteres en orden sucesiva por lo que un 12, quedaría antes de un 3 al ser sorteado. No usa parámetro. Hace un bubble sort.
 
 console.log(testing0)
 testing8.sort()

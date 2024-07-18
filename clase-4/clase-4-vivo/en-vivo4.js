@@ -1,147 +1,137 @@
-//  Ejemplo objeto literal
+// obj lit
 
-const identidad = {
-  id: 23716,
-  nombre:  "Andrés",
-  turno: "noche",
-  cursos: {},
-  ingresarTrabajo: function(){
-    console.log("Andrés ingreso al trabajo")
+const usuario = {
+  nombre: "Andrés",
+  mail: "asdasd@aasdda",
+  id: 12312332,
+  saludar: function (){
+    return "Bienvenido"
   }
-}
+};
 
-console.log(identidad.nombre)
-console.log(identidad["nombre"])
+// console.log(usuario.nombre)
+// console.log(usuario.mail)
+// console.log(usuario.id)
+// console.log(usuario.saludar())
 
-identidad.ingresarTrabajo()
+const dias =  [
+  "domingo", // 0
+  "lunes", // 1
+  "martes", // 2
+  "miércoles",
+  "jueves",
+  "viernes",
+  "sábado"
+]
+console.log(dias)
 
-const producto = {
-  nombre:"manzana",
-  precio: 1000
-}
+// console.log(dias[2])
+// console.log(dias[6])
+// console.log(dias[7])
+// console.log(dias[-1])
 
-console.log(producto.nombre)
+// cavernicola
 
-const producto2 = {nombre: "pera", precio: 1200}
-
-// arrays
-
-const nombresClase = ["David", "Leandro", "Andrés","Santiago"]
-
-
-// console.log(nombresClase)
-// console.table(nombresClase)
-
-// console.log(nombresClase.length)
-// console.log(nombresClase[0])
-// console.log(nombresClase[1])
-// console.log(nombresClase[2])
-// console.log(nombresClase[3])
-// console.log(nombresClase[4])
-// console.log(nombresClase[-1]) // nunca existe
-
-// for(let i = 0; i< nombresClase.length; i++){
-//   console.log(nombresClase[i])
+// for(let i=0; i<7; i++){
+//   console.log(dias[i])
 // }
 
-const tienda = [producto, producto2, {nombre:"a", precio: 1000}, {nombre:"a", precio: 1000}, {nombre:"b", precio: 1000}, {nombre:"c", precio: 10200}, {nombre:"d", precio: 100}, {nombre:"e", precio: 1100}, {nombre:"f", precio: 300}]
+// dias = [
+//   "domingo", // 0
+//   "lunes", // 1
+//   "martes", // 2
+//   "jueves",
+//   "viernes",
+//   "sábado"
+// ]
 
-function mostrarProductos(){
-  let textoTienda = "Bienvenidos a mi verdulería, mis productos son:"
-  for(let i = 0; i< tienda.length; i++){
-    textoTienda += `\n ${i} - ${tienda[i].nombre} - precio: $${tienda[i].precio}`
-  }
-  console.log(textoTienda)
-}
 
-// mostrarProductos()
+// console.log(dias)
 
-// console.log(nombresClase)
-// nombresClase.unshift("Carlos")
-// nombresClase.push("Nahuel")
-// console.log(nombresClase.shift())
-// console.log(nombresClase.pop())
-// console.log(nombresClase)
+// dias[1] = "inicio"
+// dias[8] = "segundo descanzo"
+// console.log(dias)
+// console.table(dias)
 
-// let tienda2 = [producto, producto2]
-// console.table(tienda2)
-// tienda2[2] = {nombre: "uvas", precio: 1500} // asi es muy feo
-// console.table(tienda2)
-// // delete tienda2[1] // no me usen
-// console.log(tienda2)
-
-// function mostrarProductos2(){
-//   let textoTienda = "Bienvenidos a mi verdulería, mis productos son:"
-//   for(let i = 0; i< tienda2.length; i++){
-//     // textoTienda += `\n ${i} - ${tienda2[i].nombre} - precio: $${tienda2[i].precio}`
-//     console.log(tienda2[i])
-//   }
-//   console.log(textoTienda)
+// for(let i=0; i<7; i++){
+//   console.log(dias[i])
 // }
-// mostrarProductos2()
+// console.log(dias[7])
 
-console.log(nombresClase.join())
-console.log(nombresClase.join("-asd-"))
-console.log(nombresClase.join(" - "))
-// alert(tienda)
+// console.log(dias.length)
 
-const numeritos = [2, 4,4,5, 42, 7, 3]
-console.log(numeritos.indexOf(4))
-console.log(numeritos.lastIndexOf(4))
+// length se puede considerar, el último índice+1
+// dias[7] = "asd"
 
-console.log(nombresClase)
-// if(nombresClase.indexOf("Andrés")>=0){
-//   console.log(`Andrés estuvo presente`)
-// } else {
-//   console.log(`Andrés no estuvo presente`)
+// for(let i=0; i<dias.length; i++){
+//   console.log(dias[i])
 // }
 
-// function estaPresente(nombre){
-//   if(nombresClase.indexOf(nombre)>=0){
-//     console.log(`${nombre} estuvo presente`)
-//   } else {
-//     console.log(`${nombre} no estuvo presente`)
-//   }
+// for(let dia of dias){
+//   console.log(dia, "nuevo")
 // }
-function estaPresente(nombre){
-  if(nombresClase.includes(nombre)){
-    console.log(`${nombre} estuvo presente`)
+
+// dias.unshift("adelante")
+// dias.push("final")
+/* const diaShift = dias.shift()
+console.log(diaShift) */
+// const diaPop = dias.pop()
+// console.log(diaPop)
+// const textoParaUsuario = dias.join(", ")
+// console.log(dias)
+
+// console.log(`los días de la semana son: ${textoParaUsuario}`)
+
+// const numeros = [1,2,3,4,5,5,5,6]
+
+
+// console.log(numeros.indexOf(5))
+// console.log(numeros.lastIndexOf(5))
+
+/* const encontrarIndiceLunes = dias.indexOf("lunes")
+console.log(encontrarIndiceLunes)
+if(encontrarIndiceLunes>0){
+  dias[encontrarIndiceLunes] = "segundo domingo"
+} */
+
+/* function agregarDia(elementoAAgregar){
+  if(dias.includes(elementoAAgregar)){
+    console.log("Ese día ya existe en la lista")
   } else {
-    console.log(`${nombre} no estuvo presente`)
+    dias.push(elementoAAgregar)
+    console.log("se agrego un día exitosamente")
   }
 }
-// estaPresente("Andrés")
-// estaPresente("David")
-// estaPresente("Julieta")
+agregarDia("martes") */
 
-// numeritos.sort()
-// console.log(numeritos)
-// console.log("5">"42")
+// dias.sort()
+console.log(dias)
 
-// const numeros = [3, 42, 44, 432, 7, 1]
+const num2 = [1, 24, 2, 233, 7, 54, 123]
 
-// numeros.sort()
+num2.sort()
+console.log(num2)
 
-// console.log(numeros)
 
-console.log(nombresClase)
-// a -> z
-function ordenarAlfabeticamente(){
-  console.log("inicial", nombresClase)
-  nombresClase.sort()
-  console.log("final", nombresClase)
-}
-function ordenarZA(){
-  console.log("inicial", nombresClase)
-  // nombresClase.sort()
-  // nombresClase.reverse()
-  nombresClase.sort().reverse()
-  console.log("final", nombresClase)
-}
+const nombres = ["Diana", "Andrés", "Martín", "Joel"]
 
-ordenarAlfabeticamente()
-ordenarZA()
-// nombresClase.reverse()
-console.log(nombresClase)
+// nombres.reverse()
 
-// Tarea, intenten hacer una funcion apra arrays que imite el funcionamiento de reverse
+// A=>Z
+// nombres.sort()
+
+// Z=>A
+/* nombres.sort()
+nombres.reverse() */
+
+// nombres.sort().reverse()
+
+console.log(nombres)
+
+
+// NO SE HACE NUNCA
+/* delete dias[3]
+
+for(let i=0; i<dias.length; i++){
+  console.log(dias[i])
+} */
