@@ -135,3 +135,22 @@ console.log(nombres)
 for(let i=0; i<dias.length; i++){
   console.log(dias[i])
 } */
+
+
+// Esto esta penalicado en pre entrega
+// while(true){} 
+
+// if(false){}
+
+// esto esta bien
+let ciclar = true
+while(ciclar){
+  ciclar = confirm("Ciclo más")
+}
+
+const verificar = confirm ( "algo")
+if(verificar){
+  console.log("Es verdadero")
+}
+
+// Eviten el uso de break y continue en ciclos
