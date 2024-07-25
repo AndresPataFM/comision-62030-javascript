@@ -191,7 +191,7 @@ console.log(marmota)
 
 // 🔸 S - Single-responsiblity Principle 🔸 
 // Responsabilidad única
-// Una clase solo debería de tener 1 trabajo
+// Un objeto solo debería de tener 1 trabajo
 
 // 🔸 O - Open-closed Principle 🔸 
 // Abierto/cerrado

@@ -1,4 +1,4 @@
-// Aca pueden jugar con una clase con propiedades provadas, setters y getters
+// Aca pueden jugar con una clase con propiedades privadas, setters y getters
 
 class Person{
     #firstName;
@@ -76,6 +76,12 @@ class Person{
 const juan = new Person(20, "Juan", "Lopez") 
 console.log(juan)
 // console.log(juan.#firstName)
+console.log(juan.firstName)
+console.log(juan.interaction)
+juan.setFirstName = ""
+
+
+/* 
 console.log(juan.firstName) // use getter
 console.log(juan.fullName) // use getter
 
@@ -84,4 +90,4 @@ console.log(juan.setFirstName="")
 juan.setFirstName= "Pedro"
 console.log(juan)
 
-console.log(juan.interaction)
+console.log(juan.interaction) */
