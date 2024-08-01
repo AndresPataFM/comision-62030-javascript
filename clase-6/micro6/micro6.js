@@ -4,7 +4,11 @@ const numeros = [3, 9, 5, 2, 8, 7];
 const tieneNumeroPar = numeros.find((num) => num % 2 === 0);
 ¿Esto es Verdadero o Falso?
 */
-const numeros = [3, 9, 5, 2, 8, 7];
+const numeros = [3, 9, 5, 12, 8, 7];
+// const tieneNumeroPar = numeros.find((num) => num % 2 === 0);
+
+// console.log(tieneNumeroPar)
+
 // verdadero pero así esta mejor
 const tieneNumeroPar = numeros.some((num) => num % 2 === 0);
 console.log(tieneNumeroPar)
@@ -15,9 +19,9 @@ Ejercicio 2: Usa el método `filter` para obtener todos los nombres que tienen m
 const nombres = ['Ana', 'Juan', 'María', 'Luisa', 'Pedro', 'Pablo'];
 const nombresLargos = nombres.filter((name) => name.length > 5);
 */
-const nombres = ['Ana', 'Juan', 'María', 'Luisa', 'Pedro', 'Pablo', "Andrés"];
-const nombresLargos = nombres.filter((name) => name.length > 5);
 
+const nombres = ['Ana', 'Juan', 'María', 'Luisa', 'Pedro', 'Pablo', "Andres"];
+const nombresLargos = nombres.filter((name) => name.length > 5);
 console.log(nombresLargos)
 
 
@@ -34,3 +38,5 @@ const celsiusTemps = fahrenheitTemps.map((fahrenheit) => ((fahrenheit - 32) * 5)
 
 console.log(fahrenheitTemps)
 console.log(celsiusTemps)
+
+// correcto

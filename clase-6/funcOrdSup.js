@@ -127,7 +127,7 @@ console.log(array.map((elemento)=>{
 }))
 */
 
-// 🔶 ✅➗(o string) reduce() 💖(o string)) 🔶
+// 🔶 ✅➗(o string) reduce() 💖🔢(o string)) 🔶
 // "Reducir"
 // 🔹 permite obtener un único valor después de iterar sobre un array
 // 🔹 parametros de la función parámetro:
@@ -150,6 +150,7 @@ const valorReducido = array.reduce((total, elemento)=>{
 
 // 🔶 ⭕➗ sort() 💥🛑 🔶
 // Ordenar
+// Funciona como un bubble sort
 // 🔹 permite reordenar un Array segun un criterio que definamos. Podes no utilizar un parametro pero no es recomendado.
 //   ◽ Sin parámetros los ordena según los carácteres UTF-16
 // 🔹se ponen 2 parametros en la funciómn parámetro, estos son los elementos a comparar
