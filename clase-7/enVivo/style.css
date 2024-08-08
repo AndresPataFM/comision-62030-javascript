@@ -1,0 +1,22 @@
+.rojo{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+
+.ejemplo{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+
+.darkmode{
+    background-color: slategrey;
+    color: aliceblue;
+}
+
+.esconder{
+    display: none;
+}

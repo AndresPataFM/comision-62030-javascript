@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NO USO REQUIRED PARA QUE PUEDAN TESTEAR MAS FACIL, RECOMIENDO USARLO SI EL DATO ES NECESARIO PARA QUE EL CÓDIGO FUNCIONE BIEN -->
+    <form id="formulario">
+        <!-- recomiendo que el nombre, id y for sean iguales y sin espacios -->
+        <label for="nombreCompleto">Nombre y Apellido</label>
+        <input type="text" name="nombreCompleto" id="nombreCompleto">
+
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email">
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono">
+
+        <label for="dni">DNI</label>
+        <input type="number" name="dni" id="dni">
+        
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+
+        <h4>Genero</h4>
+        <!-- acuerdense en radio que tengan el mismo name (opcional pero recomendado: agregar value) para el funcionamiento -->
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="otro" value="otro">
+        <label for="otro">Otro</label>
+
+        <label for="consulta">Consulta</label>
+        <select name="consulta" id="consulta">
+            <option value="tramite">Tramite</option>
+            <option value="queja">Queja</option>
+            <option value="falla">Falla Tecnica</option>
+        </select>
+
+        <!-- el encargado de enviar todo -->
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    <!-- <script src="./formDirecto.js"></script> -->
+    <!-- <script src="./formArray.js"></script> -->
+    <script src="./formData.js"></script>
+</body>
+</html>
