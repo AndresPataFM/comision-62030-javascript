@@ -1,0 +1,34 @@
+[
+    {
+        "name":"Antipulgas Gato",
+        "id":"001",
+        "type":"Medicinal",
+        "price":450,
+        "stock":32,
+        "description":"Antipulgas felino Frontline Plus"
+    },
+    {
+        "name":"Pelota",
+        "id":"012",
+        "type":"Juguete",
+        "price":"210",
+        "stock":9,
+        "description":"Pelota plástica hipoalergénica chillona de mascotas (díametro de 12 cm)"
+    },
+    {
+        "name":"Antiparasitario",
+        "id":"003",
+        "type":"Medicinal",
+        "price":370,
+        "stock":15,
+        "description":"Antiparasitario interno Oral Paraqueños"
+    },
+    {
+        "name":"Alimento Gato Joven",
+        "id":"004",
+        "type":"Medicinal",
+        "price":4530,
+        "stock":18,
+        "description":"Alimento para gatos Kitten de Royal Canin"
+    }
+]

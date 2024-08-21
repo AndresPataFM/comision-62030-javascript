@@ -1,0 +1,3 @@
+# Pokedex
+
+Utilizando [pokeapi](https://pokeapi.co/) y su método preferido de fetch y leyendo su [documentación](https://pokeapi.co/docs/v2) generen un pokedex en el cual el usuario ingresa el nombre o número del pokemon en un input y les muestra una imagen con dicho pókemon. De llegar a ingresar un nombre o número que no existe en la api, debe de salir un mensaje de [Sweet Alert](https://sweetalert2.github.io/) de error con una imagen personalizada (a gusto la imagen).
