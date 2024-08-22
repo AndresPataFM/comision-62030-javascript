@@ -1,0 +1,32 @@
+[
+  {
+    "pregunta":"¿De qué color es el pelo de Naruto?",
+    "opciones":[
+      "Negro",
+      "Verde",
+      "Amarillo",
+      "Morado"
+    ],
+    "respuesta":2
+  },
+  {
+    "pregunta":"¿Cuál es el apellido de Naruto?",
+    "opciones":[
+      "Uzumaki",
+      "Uchiha",
+      "Hyuga",
+      "Nara"
+    ],
+    "respuesta":0
+  },
+  {
+    "pregunta":"¿Cuál es la comida favorita de Naruto?",
+    "opciones":[
+      "Sushi",
+      "Ramen",
+      "Empanadas Tucumanas",
+      "Queso de cabra"
+    ],
+    "respuesta":1
+  }
+]

@@ -3,9 +3,17 @@ const botonSWAL = document.getElementById("boton")
 const URL = "https://jsonplaceholder.typicode.com/posts"
 
 async function cargarPublicaciones() {
-    const resp = await fetch(URL)
-    const posts = await resp.json()
-    console.table(posts)
+    try {
+        const resp = await fetch(URL)
+        const posts = await resp.json()
+        console.table(posts)
+    } catch (error) {
+        Swal.fire({
+            title: 'Error',
+            icon: "error",
+            text: error
+        })
+    }
 }
 
 // cargarPublicaciones()
@@ -20,8 +28,12 @@ function confirmarCarga() {
     }).then((response)=> {
         if (response.isConfirmed) {
             cargarPublicaciones()
+        } else {
+            Swal.fire({
+                title: 'Que lástima',
+            })
         }
     })
 }
 
-// botonSWAL.addEventListener("click", confirmarCarga)
+botonSWAL.addEventListener("click", confirmarCarga)

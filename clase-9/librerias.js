@@ -1,5 +1,5 @@
 // 🟠 ¿Que son? 🟠
-// Las librerías son código ajeno que podes itnroducir al tuyo mediante distintos métodos que permite utilizar lógica programada por otro.
+// Las librerías son código ajeno que podes introducir al tuyo mediante distintos métodos que permite utilizar lógica programada por otro.
 
 // 🟠 ¿Cuando utilizarlas? 🟠
 /* Normalmente se utilizan cuando:
@@ -49,14 +49,17 @@ const imprimoConsola = (dato)=>{
 // Sweet alert 2
 
 const btnSwal = document.getElementById("btnSwal")
-// btnSwal.addEventListener("click", ()=>{
-//     Swal.fire({
-//         icon: 'error',
-//         title: '404',
-//         text: 'No fue encontrado',
-//         footer: 'pruebe más tarde'
-//     })
-// })
+
+/* btnSwal.addEventListener("click", ()=>{
+    Swal.fire({
+        title: "Felecitaciones!",
+        color: "#d47a20",
+        text: "Me hiciste click!",
+        icon: "success"
+    });
+}) */
+
+
 btnSwal.addEventListener("click", ()=>{
     const { value: text } = Swal.fire({
         title: 'Soy un Submit',
@@ -64,7 +67,6 @@ btnSwal.addEventListener("click", ()=>{
         inputLabel: 'Escribe texto',
         inputPlaceholder: 'saraza'
     }).then(result=>imprimoConsola(result.value))
-
 })
 
 
@@ -86,14 +88,35 @@ Swal.fire({
     title: DateTime.now().toLocaleString(DateTime.DATETIME_FULL),
     showConfirmButton: true,
 })
+/* Swal.fire({
+    // conseguir fecha de luxon
+    title: DateTime.now(),
+    showConfirmButton: true,
+}) */
+
+console.log(DateTime.now())
 
 // Toastify
 
 const boton = document.getElementById("agregar")
-boton.addEventListener("click", ()=>{
+/* boton.addEventListener("click", ()=>{
     // más lógica
     Toastify({
         text: "Producto agregado al carrito",
         duration: 3000
+    }).showToast();
+}) */
+
+boton.addEventListener("click", ()=>{
+    Toastify({
+        text: "Producto agregado al carrito",
+        duration: 1500*(Math.random()+1),
+        newWindow: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #c43d68, #3cd0de)",
+        },
     }).showToast();
 })

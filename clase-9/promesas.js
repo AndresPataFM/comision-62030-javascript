@@ -9,7 +9,7 @@ function conseguirDatos(){
     }
   })
   // Se ve como promesa incompleta (pending)
-  console.log(datos)
+  // console.log(datos)
   return datos
 }
 
@@ -23,21 +23,30 @@ datosTrabajo.forEach(element => {
 
 
 // cadena de .then
-/* conseguirDatos().then(function(respuesta){
+conseguirDatos().then(function(respuesta){
   // Como verificamos asincrónicamente LUEGO de que se resolvio la promesa, vemos el Fulfilled o el Rejected
   console.log(respuesta)
-}).catch(e => console.warn(e)) */
+}).catch(e => Swal.fire({
+        title: "Error!",
+        color: "#d47a20",
+        text: `${e}`,
+        icon: "error"
+}))
 
 // async function
 
-async function usarDatos(){
-  // pedir datos
-  const datosPromesa = await conseguirDatos()
-  console.log(datosPromesa)
-  // si es un fetch
-  // fetch es un tipo de promesa
-  // const datosJs = await datosPromesa.json()
-  
-}
+// async function usarDatos(){
+//   try{
+//     const datos = conseguirDatos()
+//     console.log(datos)
+//   }catch(e){
+//     Swal.fire({
+//       title: "Error!",
+//       color: "#d47a20",
+//       text: `${e}`,
+//       icon: "error"
+//   })
+//   }
+// }
 
-usarDatos()
+// usarDatos()
