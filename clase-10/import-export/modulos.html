@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Manejando modulos</h1>
+        <p>
+            En js los módulos los manejamos con un modelo improtación/exportación, esto nos permite modularizar más nuestros archivos y mantener todo más ordenado. permite que un equipo trabaje en archivos distintos sin pisarse.
+        </p>
+        <p>
+            Es importante recordar que cuando uno trabaja con módulos, uno no linkea TODOS los archivos al html, cada improtación se supone que trae la información necesaria para que funcione sin tener que cargar los archivos exportadores.
+        </p>
+        <p>
+            Finalmente, en frameworks como react no es necesario, pero en js vanilla es necesario poner las extensiones de los archivos en el link de importación.
+        </p>
+    </main>
+
+    <!-- IMPORTANTISIMO NO OLVIDARSE EL type="module" SINO NO VA A FUNCIONAR -->
+    <!-- <script src="./archivoImportRaiz.js" type="module"></script> -->
+    <script src="./archivoImportRelativo.js" type="module"></script>
+</body>
+</html>
