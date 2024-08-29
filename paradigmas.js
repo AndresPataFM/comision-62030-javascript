@@ -1,4 +1,5 @@
 // 🟠 PARADIGMAS, convenciones, conceptos y buenas prácticas 🟠
+// Fundamentos teóricos de los Paradigmas de Programación | Ing. Lucas Spigariol
 
 // 🔶 DRY - Dont Repeat Yourself 🔶
 // Evitar repetir código, usen funciones si un código se repite
@@ -33,3 +34,4 @@
 // 🔶 Contenedor/Presentador 🔶
 
 // 🔶🔹 Patrones de diseño 🔹🔶
+// https://refactoring.guru/es/design-patterns/what-is-pattern
