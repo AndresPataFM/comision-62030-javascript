@@ -1,4 +1,4 @@
-console.log("hola")
+// console.log("hola")
 // console.table([1,2,3,4,5])
 
 // No hay document ni herramientas relacionadas
@@ -15,4 +15,4 @@ const fs = require("fs")
 // console.log(fs.readFileSync("ejemplo.txt"))
 
 // agregar al final | apend
-// fs.appendFileSync("ejemplo.txt", "A mi me agregaron con node.")
+fs.appendFileSync("ejemplo.txt", " A mi me agregaron con node.")
